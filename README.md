@@ -11,3 +11,5 @@ Chat with robots Simsimi, Moly, Turing.
 - (void)ask:(id<RobotProtocol>)rebot something:(NSString *)question answerBlock:(RobotAnswerBolck)answerBlock;
 ```
 ![image](https://github.com/liuwin7/SmartQ/blob/master/screen001.png)
+![image](https://github.com/liuwin7/SmartQ/blob/master/screen002.png)
+
