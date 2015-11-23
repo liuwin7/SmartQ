@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		983F1F9536D87C258DA139A1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 167A43E296CA412D5CCDD9FC /* libPods.a */; };
+		A9486F551BFC5140000A4D00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9486F541BFC5140000A4D00 /* main.m */; };
+		A9486F581BFC5140000A4D00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9486F571BFC5140000A4D00 /* AppDelegate.m */; };
+		A9486F5B1BFC5140000A4D00 /* RobotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9486F5A1BFC5140000A4D00 /* RobotViewController.m */; };
+		A9486F5E1BFC5140000A4D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9486F5C1BFC5140000A4D00 /* Main.storyboard */; };
+		A9486F601BFC5140000A4D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9486F5F1BFC5140000A4D00 /* Assets.xcassets */; };
+		A9486F6E1BFC5140000A4D00 /* SmartQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9486F6D1BFC5140000A4D00 /* SmartQTests.m */; };
+		A9486F7B1BFC54B9000A4D00 /* ITPKRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = A9486F7A1BFC54B9000A4D00 /* ITPKRobot.m */; };
+		A996A5331BFD776600C4708F /* ChatRobotDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A5321BFD776600C4708F /* ChatRobotDB.m */; };
+		A996A5361BFD9A5400C4708F /* RobotFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A5351BFD9A5400C4708F /* RobotFactory.m */; };
+		A996A5391BFEB65F00C4708F /* SimSimiRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A5381BFEB65F00C4708F /* SimSimiRobot.m */; };
+		A996A53C1BFEB6B700C4708F /* GeneralRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A53B1BFEB6B700C4708F /* GeneralRobot.m */; };
+		A996A53F1BFEC7DF00C4708F /* TuringRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A53E1BFEC7DF00C4708F /* TuringRobot.m */; };
+		A996A5471BFEE07E00C4708F /* ChatModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A5421BFEE07E00C4708F /* ChatModelData.m */; };
+		A996A5481BFEE07E00C4708F /* NSUserDefaults+ChatSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A5441BFEE07E00C4708F /* NSUserDefaults+ChatSettings.m */; };
+		A996A5491BFEE07E00C4708F /* RobotChatMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A5461BFEE07E00C4708F /* RobotChatMessageViewController.m */; };
+		A996A54C1BFF20A300C4708F /* RobotSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A54B1BFF20A300C4708F /* RobotSettingViewController.m */; };
+		A996A54E1BFF33F200C4708F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A996A54D1BFF33F200C4708F /* LaunchScreen.storyboard */; };
+		A996A5591BFF3D8100C4708F /* Launch_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A996A5561BFF3D8100C4708F /* Launch_icon.png */; };
+		A996A55A1BFF3D8100C4708F /* Launch_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A996A5571BFF3D8100C4708F /* Launch_icon@2x.png */; };
+		A996A55B1BFF3D8100C4708F /* Launch_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A996A5581BFF3D8100C4708F /* Launch_icon@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9486F6A1BFC5140000A4D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9486F481BFC513F000A4D00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9486F4F1BFC513F000A4D00;
+			remoteInfo = SmartQ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0576EE931DDF7BE029CC764F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		167A43E296CA412D5CCDD9FC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		185782E2A7EF6B4BFAE8B022 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A9486F501BFC513F000A4D00 /* SmartQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9486F541BFC5140000A4D00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9486F561BFC5140000A4D00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9486F571BFC5140000A4D00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9486F591BFC5140000A4D00 /* RobotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RobotViewController.h; sourceTree = "<group>"; };
+		A9486F5A1BFC5140000A4D00 /* RobotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RobotViewController.m; sourceTree = "<group>"; };
+		A9486F5D1BFC5140000A4D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9486F5F1BFC5140000A4D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9486F641BFC5140000A4D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9486F691BFC5140000A4D00 /* SmartQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9486F6D1BFC5140000A4D00 /* SmartQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartQTests.m; sourceTree = "<group>"; };
+		A9486F6F1BFC5140000A4D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9486F791BFC54B9000A4D00 /* ITPKRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITPKRobot.h; sourceTree = "<group>"; };
+		A9486F7A1BFC54B9000A4D00 /* ITPKRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITPKRobot.m; sourceTree = "<group>"; };
+		A9486F7C1BFC54CE000A4D00 /* RobotProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotProtocol.h; sourceTree = "<group>"; };
+		A996A5311BFD776600C4708F /* ChatRobotDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRobotDB.h; sourceTree = "<group>"; };
+		A996A5321BFD776600C4708F /* ChatRobotDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRobotDB.m; sourceTree = "<group>"; };
+		A996A5341BFD9A5400C4708F /* RobotFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotFactory.h; sourceTree = "<group>"; };
+		A996A5351BFD9A5400C4708F /* RobotFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotFactory.m; sourceTree = "<group>"; };
+		A996A5371BFEB65F00C4708F /* SimSimiRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimSimiRobot.h; sourceTree = "<group>"; };
+		A996A5381BFEB65F00C4708F /* SimSimiRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimSimiRobot.m; sourceTree = "<group>"; };
+		A996A53A1BFEB6B700C4708F /* GeneralRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralRobot.h; sourceTree = "<group>"; };
+		A996A53B1BFEB6B700C4708F /* GeneralRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralRobot.m; sourceTree = "<group>"; };
+		A996A53D1BFEC7DF00C4708F /* TuringRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuringRobot.h; sourceTree = "<group>"; };
+		A996A53E1BFEC7DF00C4708F /* TuringRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuringRobot.m; sourceTree = "<group>"; };
+		A996A5411BFEE07E00C4708F /* ChatModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatModelData.h; sourceTree = "<group>"; };
+		A996A5421BFEE07E00C4708F /* ChatModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatModelData.m; sourceTree = "<group>"; };
+		A996A5431BFEE07E00C4708F /* NSUserDefaults+ChatSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ChatSettings.h"; sourceTree = "<group>"; };
+		A996A5441BFEE07E00C4708F /* NSUserDefaults+ChatSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ChatSettings.m"; sourceTree = "<group>"; };
+		A996A5451BFEE07E00C4708F /* RobotChatMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotChatMessageViewController.h; sourceTree = "<group>"; };
+		A996A5461BFEE07E00C4708F /* RobotChatMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotChatMessageViewController.m; sourceTree = "<group>"; };
+		A996A54A1BFF20A300C4708F /* RobotSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotSettingViewController.h; sourceTree = "<group>"; };
+		A996A54B1BFF20A300C4708F /* RobotSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotSettingViewController.m; sourceTree = "<group>"; };
+		A996A54D1BFF33F200C4708F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A996A5561BFF3D8100C4708F /* Launch_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch_icon.png; sourceTree = "<group>"; };
+		A996A5571BFF3D8100C4708F /* Launch_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch_icon@2x.png"; sourceTree = "<group>"; };
+		A996A5581BFF3D8100C4708F /* Launch_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch_icon@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9486F4D1BFC513F000A4D00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983F1F9536D87C258DA139A1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9486F661BFC5140000A4D00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A603A16373BD477C6B6A715 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				167A43E296CA412D5CCDD9FC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C3B877EA50F559BE5052FC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0576EE931DDF7BE029CC764F /* Pods.debug.xcconfig */,
+				185782E2A7EF6B4BFAE8B022 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9486F471BFC513F000A4D00 = {
+			isa = PBXGroup;
+			children = (
+				A9486F521BFC513F000A4D00 /* SmartQ */,
+				A9486F6C1BFC5140000A4D00 /* SmartQTests */,
+				A9486F511BFC513F000A4D00 /* Products */,
+				6C3B877EA50F559BE5052FC9 /* Pods */,
+				6A603A16373BD477C6B6A715 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9486F511BFC513F000A4D00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9486F501BFC513F000A4D00 /* SmartQ.app */,
+				A9486F691BFC5140000A4D00 /* SmartQTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9486F521BFC513F000A4D00 /* SmartQ */ = {
+			isa = PBXGroup;
+			children = (
+				A9486F781BFC538E000A4D00 /* robot */,
+				A996A5301BFD756600C4708F /* database */,
+				A996A5401BFEE04400C4708F /* chatWithRobots */,
+				A9486F561BFC5140000A4D00 /* AppDelegate.h */,
+				A9486F571BFC5140000A4D00 /* AppDelegate.m */,
+				A9486F591BFC5140000A4D00 /* RobotViewController.h */,
+				A9486F5A1BFC5140000A4D00 /* RobotViewController.m */,
+				A9486F5C1BFC5140000A4D00 /* Main.storyboard */,
+				A9486F5F1BFC5140000A4D00 /* Assets.xcassets */,
+				A996A54D1BFF33F200C4708F /* LaunchScreen.storyboard */,
+				A9486F641BFC5140000A4D00 /* Info.plist */,
+				A996A5551BFF3D0B00C4708F /* resources */,
+				A9486F531BFC5140000A4D00 /* Supporting Files */,
+			);
+			path = SmartQ;
+			sourceTree = "<group>";
+		};
+		A9486F531BFC5140000A4D00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9486F541BFC5140000A4D00 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9486F6C1BFC5140000A4D00 /* SmartQTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9486F6D1BFC5140000A4D00 /* SmartQTests.m */,
+				A9486F6F1BFC5140000A4D00 /* Info.plist */,
+			);
+			path = SmartQTests;
+			sourceTree = "<group>";
+		};
+		A9486F781BFC538E000A4D00 /* robot */ = {
+			isa = PBXGroup;
+			children = (
+				A9486F791BFC54B9000A4D00 /* ITPKRobot.h */,
+				A9486F7A1BFC54B9000A4D00 /* ITPKRobot.m */,
+				A996A5371BFEB65F00C4708F /* SimSimiRobot.h */,
+				A996A5381BFEB65F00C4708F /* SimSimiRobot.m */,
+				A996A53D1BFEC7DF00C4708F /* TuringRobot.h */,
+				A996A53E1BFEC7DF00C4708F /* TuringRobot.m */,
+				A996A53A1BFEB6B700C4708F /* GeneralRobot.h */,
+				A996A53B1BFEB6B700C4708F /* GeneralRobot.m */,
+				A996A5341BFD9A5400C4708F /* RobotFactory.h */,
+				A996A5351BFD9A5400C4708F /* RobotFactory.m */,
+				A9486F7C1BFC54CE000A4D00 /* RobotProtocol.h */,
+			);
+			path = robot;
+			sourceTree = "<group>";
+		};
+		A996A5301BFD756600C4708F /* database */ = {
+			isa = PBXGroup;
+			children = (
+				A996A5311BFD776600C4708F /* ChatRobotDB.h */,
+				A996A5321BFD776600C4708F /* ChatRobotDB.m */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		A996A5401BFEE04400C4708F /* chatWithRobots */ = {
+			isa = PBXGroup;
+			children = (
+				A996A5411BFEE07E00C4708F /* ChatModelData.h */,
+				A996A5421BFEE07E00C4708F /* ChatModelData.m */,
+				A996A5431BFEE07E00C4708F /* NSUserDefaults+ChatSettings.h */,
+				A996A5441BFEE07E00C4708F /* NSUserDefaults+ChatSettings.m */,
+				A996A5451BFEE07E00C4708F /* RobotChatMessageViewController.h */,
+				A996A5461BFEE07E00C4708F /* RobotChatMessageViewController.m */,
+				A996A54A1BFF20A300C4708F /* RobotSettingViewController.h */,
+				A996A54B1BFF20A300C4708F /* RobotSettingViewController.m */,
+			);
+			path = chatWithRobots;
+			sourceTree = "<group>";
+		};
+		A996A5551BFF3D0B00C4708F /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				A996A5561BFF3D8100C4708F /* Launch_icon.png */,
+				A996A5571BFF3D8100C4708F /* Launch_icon@2x.png */,
+				A996A5581BFF3D8100C4708F /* Launch_icon@3x.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9486F4F1BFC513F000A4D00 /* SmartQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9486F721BFC5140000A4D00 /* Build configuration list for PBXNativeTarget "SmartQ" */;
+			buildPhases = (
+				579003F2EB0D976A98BDF14B /* Check Pods Manifest.lock */,
+				A9486F4C1BFC513F000A4D00 /* Sources */,
+				A9486F4D1BFC513F000A4D00 /* Frameworks */,
+				A9486F4E1BFC513F000A4D00 /* Resources */,
+				901B267C98F9884A3A55B8DC /* Embed Pods Frameworks */,
+				AF9315198018396D96126A70 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartQ;
+			productName = SmartQ;
+			productReference = A9486F501BFC513F000A4D00 /* SmartQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9486F681BFC5140000A4D00 /* SmartQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9486F751BFC5140000A4D00 /* Build configuration list for PBXNativeTarget "SmartQTests" */;
+			buildPhases = (
+				A9486F651BFC5140000A4D00 /* Sources */,
+				A9486F661BFC5140000A4D00 /* Frameworks */,
+				A9486F671BFC5140000A4D00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9486F6B1BFC5140000A4D00 /* PBXTargetDependency */,
+			);
+			name = SmartQTests;
+			productName = SmartQTests;
+			productReference = A9486F691BFC5140000A4D00 /* SmartQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9486F481BFC513F000A4D00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = topsci;
+				TargetAttributes = {
+					A9486F4F1BFC513F000A4D00 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					A9486F681BFC5140000A4D00 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A9486F4F1BFC513F000A4D00;
+					};
+				};
+			};
+			buildConfigurationList = A9486F4B1BFC513F000A4D00 /* Build configuration list for PBXProject "SmartQ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9486F471BFC513F000A4D00;
+			productRefGroup = A9486F511BFC513F000A4D00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9486F4F1BFC513F000A4D00 /* SmartQ */,
+				A9486F681BFC5140000A4D00 /* SmartQTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9486F4E1BFC513F000A4D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9486F601BFC5140000A4D00 /* Assets.xcassets in Resources */,
+				A996A55B1BFF3D8100C4708F /* Launch_icon@3x.png in Resources */,
+				A996A5591BFF3D8100C4708F /* Launch_icon.png in Resources */,
+				A996A54E1BFF33F200C4708F /* LaunchScreen.storyboard in Resources */,
+				A9486F5E1BFC5140000A4D00 /* Main.storyboard in Resources */,
+				A996A55A1BFF3D8100C4708F /* Launch_icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9486F671BFC5140000A4D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		579003F2EB0D976A98BDF14B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		901B267C98F9884A3A55B8DC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF9315198018396D96126A70 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9486F4C1BFC513F000A4D00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A996A54C1BFF20A300C4708F /* RobotSettingViewController.m in Sources */,
+				A996A5391BFEB65F00C4708F /* SimSimiRobot.m in Sources */,
+				A996A5361BFD9A5400C4708F /* RobotFactory.m in Sources */,
+				A9486F7B1BFC54B9000A4D00 /* ITPKRobot.m in Sources */,
+				A9486F5B1BFC5140000A4D00 /* RobotViewController.m in Sources */,
+				A9486F581BFC5140000A4D00 /* AppDelegate.m in Sources */,
+				A9486F551BFC5140000A4D00 /* main.m in Sources */,
+				A996A5491BFEE07E00C4708F /* RobotChatMessageViewController.m in Sources */,
+				A996A5481BFEE07E00C4708F /* NSUserDefaults+ChatSettings.m in Sources */,
+				A996A5331BFD776600C4708F /* ChatRobotDB.m in Sources */,
+				A996A53F1BFEC7DF00C4708F /* TuringRobot.m in Sources */,
+				A996A53C1BFEB6B700C4708F /* GeneralRobot.m in Sources */,
+				A996A5471BFEE07E00C4708F /* ChatModelData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9486F651BFC5140000A4D00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9486F6E1BFC5140000A4D00 /* SmartQTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9486F6B1BFC5140000A4D00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9486F4F1BFC513F000A4D00 /* SmartQ */;
+			targetProxy = A9486F6A1BFC5140000A4D00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9486F5C1BFC5140000A4D00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9486F5D1BFC5140000A4D00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9486F701BFC5140000A4D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A9486F711BFC5140000A4D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9486F731BFC5140000A4D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0576EE931DDF7BE029CC764F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-topsci.SmartQ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A9486F741BFC5140000A4D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 185782E2A7EF6B4BFAE8B022 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-topsci.SmartQ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A9486F761BFC5140000A4D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-topsci.SmartQTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartQ.app/SmartQ";
+			};
+			name = Debug;
+		};
+		A9486F771BFC5140000A4D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-topsci.SmartQTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartQ.app/SmartQ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9486F4B1BFC513F000A4D00 /* Build configuration list for PBXProject "SmartQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9486F701BFC5140000A4D00 /* Debug */,
+				A9486F711BFC5140000A4D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9486F721BFC5140000A4D00 /* Build configuration list for PBXNativeTarget "SmartQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9486F731BFC5140000A4D00 /* Debug */,
+				A9486F741BFC5140000A4D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9486F751BFC5140000A4D00 /* Build configuration list for PBXNativeTarget "SmartQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9486F761BFC5140000A4D00 /* Debug */,
+				A9486F771BFC5140000A4D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9486F481BFC513F000A4D00 /* Project object */;
+}
