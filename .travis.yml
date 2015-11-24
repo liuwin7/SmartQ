@@ -20,4 +20,4 @@ before_install:
 
 script:
 
-- xctool  -workspace SmartQ.xcworkspace -scheme SmartQ -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO
+- xctool -workspace SmartQ.xcworkspace -scheme SmartQ -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO
