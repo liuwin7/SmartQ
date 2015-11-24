@@ -10,20 +10,5 @@ Chat with robots Simsimi, Moly, Turing.
  */
 - (void)ask:(id<RobotProtocol>)rebot something:(NSString *)question answerBlock:(RobotAnswerBolck)answerBlock;
 ```
-<style type="text/css">
-	#styleli {
-	    list-style-type:none;
-	    float:left;
-	    width:300px;
-	    text-align:center;
-	    line-height:400px;
-	    font-size:14px;
-	}
-</style>
 
-<div>
-    <ul>                
-        <li id="styleli"><img src="https://github.com/liuwin7/SmartQ/blob/master/screen001.png" title="Image"></li>
-        <li id="styleli"><img src="https://github.com/liuwin7/SmartQ/blob/master/screen002.png" title="Image"></li>
-    </ul>
-</div>
+![image](https://github.com/liuwin7/SmartQ/blob/master/screen001.png) ![image](https://github.com/liuwin7/SmartQ/blob/master/screen002.png)
