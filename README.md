@@ -11,7 +11,7 @@ Chat with robots Simsimi, Moly, Turing.
 - (void)ask:(id<RobotProtocol>)rebot something:(NSString *)question answerBlock:(RobotAnswerBolck)answerBlock;
 ```
 <style type="text/css">
-	#styleli {
+	li {
 	    list-style-type:none;
 	    float:left;
 	    width:300px;
@@ -21,9 +21,10 @@ Chat with robots Simsimi, Moly, Turing.
 	}
 </style>
 
-<div>
+<div >
     <ul>                
-        <li id="styleli"><img src="https://github.com/liuwin7/SmartQ/blob/master/screen001.png" title="Image"></li>
-        <li id="styleli"><img src="https://github.com/liuwin7/SmartQ/blob/master/screen002.png" title="Image"></li>
+        <li><img src="https://github.com/liuwin7/SmartQ/blob/master/screen001.png" title="Image"></li>
+        <li><img src="https://github.com/liuwin7/SmartQ/blob/master/screen002.png" title="Image"></li>
     </ul>
 </div>
+
