@@ -11,7 +11,7 @@ Chat with robots Simsimi, Moly, Turing.
 - (void)ask:(id<RobotProtocol>)rebot something:(NSString *)question answerBlock:(RobotAnswerBolck)answerBlock;
 ```
 <style type="text/css">
-	styleli {
+	#styleli {
 	    list-style-type:none;
 	    float:left;
 	    width:300px;
