@@ -15,8 +15,7 @@ env:
    - DESTINATION="OS=9.1,name=iPhone 6s Plus" SDK=iphonesimulator9.1
 
 before_install:
-- brew update
-- gem install cocoapods
+- pod update
 
 script:
 
