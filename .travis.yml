@@ -14,10 +14,6 @@ env:
    - DESTINATION="OS=9.1,name=iPhone 6s" SDK=iphonesimulator9.1
    - DESTINATION="OS=9.1,name=iPhone 6s Plus" SDK=iphonesimulator9.1
 
-   - DESTINATION="OS=8.1,name=iPad 2" SDK=iphonesimulator9.1
-   - DESTINATION="OS=8.4,name=iPad Retina" SDK=iphonesimulator9.1
-   - DESTINATION="OS=9.1,name=iPad Air" SDK=iphonesimulator9.1
-
 before_install:
 - brew update
 - gem install cocoapods
