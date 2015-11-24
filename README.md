@@ -14,17 +14,16 @@ Chat with robots Simsimi, Moly, Turing.
 	li {
 	    list-style-type:none;
 	    float:left;
-	    width:300px;
+	    width:240px;
 	    text-align:center;
-	    line-height:400px;
+	    line-height:300px;
 	    font-size:14px;
 	}
 </style>
 
 <div >
     <ul>                
-        <li><img src="https://github.com/liuwin7/SmartQ/blob/master/screen001.png" title="Image"></li>
-        <li><img src="https://github.com/liuwin7/SmartQ/blob/master/screen002.png" title="Image"></li>
+        <li>![image](https://github.com/liuwin7/SmartQ/blob/master/screen001.png)</li>
+        <li>![image](https://github.com/liuwin7/SmartQ/blob/master/screen002.png)</li>
     </ul>
 </div>
-
