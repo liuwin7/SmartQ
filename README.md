@@ -1,4 +1,4 @@
-# SmartQ
+# SmartQ [![Build Status](https://travis-ci.org/liuwin7/SmartQ.svg?branch=master)](https://travis-ci.org/liuwin7/SmartQ)
 Chat with robots Simsimi, Moly, Turing. 
 ```
 /**
