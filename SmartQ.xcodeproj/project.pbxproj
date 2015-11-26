@@ -15,6 +15,7 @@
 		A9486F601BFC5140000A4D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9486F5F1BFC5140000A4D00 /* Assets.xcassets */; };
 		A9486F6E1BFC5140000A4D00 /* SmartQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9486F6D1BFC5140000A4D00 /* SmartQTests.m */; };
 		A9486F7B1BFC54B9000A4D00 /* ITPKRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = A9486F7A1BFC54B9000A4D00 /* ITPKRobot.m */; };
+		A9931F041C06A26700429A8B /* LinphoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9931F031C06A26700429A8B /* LinphoneManager.m */; };
 		A996A5331BFD776600C4708F /* ChatRobotDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A5321BFD776600C4708F /* ChatRobotDB.m */; };
 		A996A5361BFD9A5400C4708F /* RobotFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A5351BFD9A5400C4708F /* RobotFactory.m */; };
 		A996A5391BFEB65F00C4708F /* SimSimiRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = A996A5381BFEB65F00C4708F /* SimSimiRobot.m */; };
@@ -59,6 +60,8 @@
 		A9486F791BFC54B9000A4D00 /* ITPKRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITPKRobot.h; sourceTree = "<group>"; };
 		A9486F7A1BFC54B9000A4D00 /* ITPKRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITPKRobot.m; sourceTree = "<group>"; };
 		A9486F7C1BFC54CE000A4D00 /* RobotProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotProtocol.h; sourceTree = "<group>"; };
+		A9931F021C06A26700429A8B /* LinphoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinphoneManager.h; sourceTree = "<group>"; };
+		A9931F031C06A26700429A8B /* LinphoneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinphoneManager.m; sourceTree = "<group>"; };
 		A996A5311BFD776600C4708F /* ChatRobotDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRobotDB.h; sourceTree = "<group>"; };
 		A996A5321BFD776600C4708F /* ChatRobotDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRobotDB.m; sourceTree = "<group>"; };
 		A996A5341BFD9A5400C4708F /* RobotFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotFactory.h; sourceTree = "<group>"; };
@@ -145,10 +148,11 @@
 				A9486F781BFC538E000A4D00 /* robot */,
 				A996A5301BFD756600C4708F /* database */,
 				A996A5401BFEE04400C4708F /* chatWithRobots */,
-				A9486F561BFC5140000A4D00 /* AppDelegate.h */,
-				A9486F571BFC5140000A4D00 /* AppDelegate.m */,
+				A9931F011C06A1F800429A8B /* linphone */,
 				A9486F591BFC5140000A4D00 /* RobotViewController.h */,
 				A9486F5A1BFC5140000A4D00 /* RobotViewController.m */,
+				A9486F561BFC5140000A4D00 /* AppDelegate.h */,
+				A9486F571BFC5140000A4D00 /* AppDelegate.m */,
 				A9486F5C1BFC5140000A4D00 /* Main.storyboard */,
 				A9486F5F1BFC5140000A4D00 /* Assets.xcassets */,
 				A996A54D1BFF33F200C4708F /* LaunchScreen.storyboard */,
@@ -192,6 +196,15 @@
 				A9486F7C1BFC54CE000A4D00 /* RobotProtocol.h */,
 			);
 			path = robot;
+			sourceTree = "<group>";
+		};
+		A9931F011C06A1F800429A8B /* linphone */ = {
+			isa = PBXGroup;
+			children = (
+				A9931F021C06A26700429A8B /* LinphoneManager.h */,
+				A9931F031C06A26700429A8B /* LinphoneManager.m */,
+			);
+			path = linphone;
 			sourceTree = "<group>";
 		};
 		A996A5301BFD756600C4708F /* database */ = {
@@ -390,6 +403,7 @@
 				A9486F581BFC5140000A4D00 /* AppDelegate.m in Sources */,
 				A9486F551BFC5140000A4D00 /* main.m in Sources */,
 				A996A5491BFEE07E00C4708F /* RobotChatMessageViewController.m in Sources */,
+				A9931F041C06A26700429A8B /* LinphoneManager.m in Sources */,
 				A996A5481BFEE07E00C4708F /* NSUserDefaults+ChatSettings.m in Sources */,
 				A996A5331BFD776600C4708F /* ChatRobotDB.m in Sources */,
 				A996A53F1BFEC7DF00C4708F /* TuringRobot.m in Sources */,
@@ -513,8 +527,23 @@
 			baseConfigurationReference = 0576EE931DDF7BE029CC764F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/JSQMessagesViewController\"",
+					"\"${PODS_ROOT}/Headers/Public/JSQSystemSoundPlayer\"",
+					"$(SRCROOT)/SmartQ/liblinphone-sdk/apple-darwin/include",
+				);
 				INFOPLIST_FILE = SmartQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/SmartQ/liblinphone-sdk/apple-darwin/lib",
+					"$(PROJECT_DIR)/SmartQ/liblinphone-sdk/apple-darwin/lib/mediastreamer/plugins",
+					"$(SRCROOT)/SmartQ/liblinphone-sdk/apple-darwin/lib",
+					"$(SRCROOT)/SmartQ/liblinphone-sdk/apple-darwin/lib/mediastreamer/plugins",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-topsci.SmartQ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -525,8 +554,23 @@
 			baseConfigurationReference = 185782E2A7EF6B4BFAE8B022 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/JSQMessagesViewController\"",
+					"\"${PODS_ROOT}/Headers/Public/JSQSystemSoundPlayer\"",
+					"$(SRCROOT)/SmartQ/liblinphone-sdk/apple-darwin/include",
+				);
 				INFOPLIST_FILE = SmartQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/SmartQ/liblinphone-sdk/apple-darwin/lib",
+					"$(PROJECT_DIR)/SmartQ/liblinphone-sdk/apple-darwin/lib/mediastreamer/plugins",
+					"$(SRCROOT)/SmartQ/liblinphone-sdk/apple-darwin/lib",
+					"$(SRCROOT)/SmartQ/liblinphone-sdk/apple-darwin/lib/mediastreamer/plugins",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cm-topsci.SmartQ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
