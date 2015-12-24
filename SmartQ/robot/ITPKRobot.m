@@ -48,7 +48,7 @@ static const NSInteger ERROR_CODE_NO_QUESTION = 1;
         answerBlock(error, nil);
         return;
     }
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer.timeoutInterval = 15;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain", nil];
     NSDictionary *parameters = @{
@@ -59,15 +59,19 @@ static const NSInteger ERROR_CODE_NO_QUESTION = 1;
                                  @"limit": @(7),
                                  };
     [manager GET:ITPK_ROBOT_API_URL
-      parameters:parameters
-         success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+      parameters:parameters progress:nil
+         success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
              answerBlock(nil, responseObject);
-         } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+
+         }
+         failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
              if (error.code == 3840) {
-                 answerBlock(nil, operation.responseString);
+                 NSLog(@"error %@", error);
+                 //                 answerBlock(nil, operation.responseString);
                  return;
              }
              answerBlock(error, nil);
+
          }];
 }
 

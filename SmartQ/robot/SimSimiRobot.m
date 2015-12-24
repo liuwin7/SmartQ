@@ -7,7 +7,7 @@
 //
 
 #import "SimSimiRobot.h"
-#import <AFNetworking/AFNetworking.h>
+#import "AFNetworking.h"
 
 static NSString *const SIMSIMI_ROBOT_API_URL = @"http://sandbox.api.simsimi.com/request.p";
 
@@ -54,7 +54,8 @@ static const NSInteger ERROR_CODE_SERVER_ERROR = 500;
         answerBlock(error, nil);
         return;
     }
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer.timeoutInterval = 15;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", nil];
     NSDictionary *parameters = @{
@@ -63,21 +64,21 @@ static const NSInteger ERROR_CODE_SERVER_ERROR = 500;
                                  @"lc": @"ch",
                                  @"ft": @"1.0",
                                  };
-    [manager GET:SIMSIMI_ROBOT_API_URL
-      parameters:parameters
-         success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-             NSDictionary *responseDictionary = (NSDictionary *)responseObject;
-             NSInteger resultCode = [[responseDictionary objectForKey:@"result"] integerValue];
-             if (100 == resultCode) {
-                 NSString *responseString = [responseDictionary objectForKey:@"response"];
-                 answerBlock(nil, responseString);
-             } else {
-                 NSError *error = [self errorForCode:resultCode];
-                 answerBlock(error, nil);
-             }
-         } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
-             answerBlock(error, nil);
-         }];
+    
+    [manager GET:SIMSIMI_ROBOT_API_URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+        NSInteger resultCode = [[responseDictionary objectForKey:@"result"] integerValue];
+        if (100 == resultCode) {
+            NSString *responseString = [responseDictionary objectForKey:@"response"];
+            answerBlock(nil, responseString);
+        } else {
+            NSError *error = [self errorForCode:resultCode];
+            answerBlock(error, nil);
+        }
+
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        answerBlock(error, nil);
+    }];
 }
 
 #pragma mark - 

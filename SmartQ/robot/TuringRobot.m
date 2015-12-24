@@ -70,7 +70,7 @@ static const NSInteger ERROR_CODE_REQUEST_FORMATE_ERROR             = 40007;
         answerBlock(error, nil);
         return;
     }
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer.timeoutInterval = 15;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/json", nil];
     NSDictionary *parameters = @{
@@ -80,7 +80,8 @@ static const NSInteger ERROR_CODE_REQUEST_FORMATE_ERROR             = 40007;
                                  };
     [manager GET:TURING_ROBOT_API_URL
       parameters:parameters
-         success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+        progress:nil
+         success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
              NSDictionary *responseDictionary = (NSDictionary *)responseObject;
              NSInteger resultCode = [[responseDictionary objectForKey:@"code"] integerValue];
              if (RESPONSE_CODE_OK == resultCode) {
@@ -90,7 +91,8 @@ static const NSInteger ERROR_CODE_REQUEST_FORMATE_ERROR             = 40007;
                  NSError *error = [self errorForCode:resultCode];
                  answerBlock(error, nil);
              }
-         } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+         }
+         failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
              answerBlock(error, nil);
          }];
 }
